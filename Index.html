@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="https://cdn.jsdelivr.net/npm/boostrap@5.3.3/dist/css/boostrap.min.css"rel="stylesheet">  
+    <title>CV</title>
+    <style>
+        body{
+            background: #fff0f5;
+            font-family:'Payfair Display',serif ;
+            padding: 100px;
+        }
+        section{
+            margin: 50px;
+            max-width:1000px ;
+            padding:30px ;
+            background: #fff0f5;
+            border-radius: 20px;
+            box-shadow:0 0 12px rgba(255, 182,  193, 0.3) ;
+            border: 2px;
+            
+        }
+        h1.title{
+            text-align:center ;
+            margin-bottom:50px ;
+            color:#c06582 ;
+        }
+        h2.section-title{
+            color: #d88c9a;
+            border-bottom: 1px dashed #f3c2d3;
+            display: inline-block;
+            margin-top: 25px;
+        }
+        .profile-photo{
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #d88c9a;
+        }
+        .cv-romantic,
+        .cv-sidebar,
+        .cv-modern{
+            page-break-before: always;
+        }
+        
+        .sidebar{
+            background: #fce4ec;
+            padding: ;
+        }
+        
+        .sidebar{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border:4px solid #d88c9a ;
+        }
+
+        .btn-print{
+            margin-bottom: 15px;
+        }
+
+        @media print{
+            .btn-print, .navigation{
+                display: none !important; 
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Trois modeles de CV</h1>
+        <div class="navigation text-center mb-5">
+            <a href="#CV1" class="btn btn-outline-danger m-2">CV1 Classique</a>
+            <a href="#CV2" class="btn btn-outline-danger m-2">CV2 Navigation</a>
+            <a href="#CV3" class="btn btn-outline-danger m-2">CV3 Responsive</a>
+        </div>
+        <!--CV1-->
+        <section id="#CV1" class="CV-romantic">
+            <button onclick="printSection('CV1')" class="btn btn-outline-danger btn-print">Telecharger le CV</button>
+            <div class="text-center">
+                <img src="./IMG_20250313_071435_724.jpg" alt="Ma Photo" style=" width: 100px; height: 100px;">
+                <h2>LOKO Gabriel</h2>
+                <p class="fst-italic" poetique & creation d'emotions visuelles</p>
+            </div>
+            <h2 class="section title">A propos</h2>
+            <p>Amoureux des couleurs et des filles sans abris</p>
+            <h2 class="section-title">competences</h2>
+            <p>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>Microsoft</li>
+                    <li>Developpement web</li>
+                    <li>CyberAttack-CMS</li>
+                </ul>
+            </p>
+            <h2 class="section-title">Experiences</h2>
+            <p><strong>Independante</strong> -depuis 2008</p>
+            <h2 class="section-title">Formation/Diplome</h2>
+            <p><strong>Master</strong> -2021</p>
+            <p><strong>Licence</strong> -2019</p>
+            <p><strong>BAC</strong> -2016</p>
+            <p><strong>BEPC</strong> -2013</p>
+        </section>
+        <section>
+        <section id="#CV2" class="CV-sidebar d-flex">
+           <button onclick="printSection('CV2')" class="btn btn-outline danger btn-print">Telecharger le CV</button>  
+           <div class="sidebar text-center">
+            <img src="./IMG_20250313_071435_724.jpg" alt="Ma Photo" style=" width: 80px; height: 80px;">
+            <h4>AISSATOU</h4>
+            <P>Danseuse professionnelle-Art</P>
+            <hr>
+            <p><strong>Aisatou@gmail.com</strong><br> +229 01 666 108 19</p>
+            <p>Porto-Novo / Vakon</p>
+            <hr>
+            <ul class="list-unstyled"></ul>
+            <li>Francais</li>
+            <li>Portuguais</li>
+            <div class="PS-4">
+                <h2 class="section-title">Profil</h2>
+                <p>Creative,sensible et passionnee par le design...</p>
+                <h2 class="section-title">competences</h2>
+                <ul>
+                    <li>Cuisine</li>
+                    <li>Drague</li>
+                    <li>Natation</li>
+                </ul>
+            </div>    
+        </div>
+
+    </section>
+    <section id="CV" class="CV-modern">
+        <button onclick="printSection('CV3')" class="btn btn-outline-danger btn-print"
+        <div class="text-center">
+            <img src="IMG_20250313_071435_724.jpg" alt="Me voici" style="width: 80px; height: 80px;">
+            <h2>Angela</h2>
+            <p class="fst-italic">Sensible a l'esthetique douce</p>
+        </div>
+        <h2 class="section-title">Profil</h2>
+        <p>Forte d'un univers empreinte temps de tendresse</p>
+    </section>
+</div>
+
+
+</body>
+</html>
